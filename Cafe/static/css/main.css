@@ -1,0 +1,98 @@
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #E0FBFC;
+    }
+
+    header {
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+	footer {
+    background: linear-gradient(to bottom, #34495e, #2c3e50);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+#banner {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+    nav {
+        background: linear-gradient(to bottom, #34495e, #2c3e50);
+        color: #ecf0f1;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+        color: #bdc3c7;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #ecf0f1;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    .banner {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 150px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .intro p {
+        font-size: 1.2em;
+        color: #555;
+    }
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+	background: #F0FBFD;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.image-container {
+    text-align: right; /* Aligns the image to the right */
+}

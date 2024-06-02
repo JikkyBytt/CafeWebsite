@@ -1,0 +1,14 @@
+{%extends 'main/base.html'%}
+{% block title %}My Cafe - Home{% endblock %}
+{% load static %}
+		{%block content%}
+	 
+		<div class="intro">
+            <h2>About Our Cafe</h2>
+            <p>Welcome to Minty Fresh, where we serve delicious coffee, pastries and more in a delightful, cozy atmosphere. Whether you're looking for a snack, a quick caffeine fix or a relaxing place to unwind, we've got you covered. Check out our menu to see what we have to offer, and don't hesitate to contact us if you have any questions!</p>
+			<a>We're open from 08:00 to 19:00</a>
+		</div>
+		<div class="banner">
+            <img src="{% static 'images/cafe_banner.jpg' %}" alt="Cafe Banner" width="400" height="400">
+        </div>
+	{% endblock%}

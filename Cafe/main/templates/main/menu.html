@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% block title %}My Cafe - Menu{% endblock %}
+{% load static %}
+{% block content %}
+    <h1>Menu</h1>
+	
+    <form method="post" action="{% url 'place_order' %}">
+        {% csrf_token %}
+        <ul>
+            {% for item in menu_items %}
+                <li>
+                    <a href="{% url 'itemname' item.item %}">{{ item.item }}</a> - ${{ item.price }}
+                    <input type="number" name="quantity_{{ item.id }}" min="0" value="0"style="width: 3em;">
+                    <input type="hidden" name="item_id" value="{{ item.id }}">
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Place Order</button>
+    </form>
+	
+{% endblock %}
+
